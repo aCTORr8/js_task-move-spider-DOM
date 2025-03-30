@@ -9,8 +9,8 @@ document.addEventListener('click', (e) => {
 
   const blocWidth = parseFloat(window.getComputedStyle(wall).borderWidth);
 
-  const mouseX = e.pageX;
-  const mouseY = e.pageY;
+  const mouseX = e.clientX;
+  const mouseY = e.clientY;
 
   if (
     mouseX >= wallCoords.left &&
